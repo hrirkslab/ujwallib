@@ -10,7 +10,7 @@ public class Dump extends RetrieveLatLong {
     }
 
     public static void main(String[] args) throws MalformedURLException {
-        RetrieveLatLong retrieveLatLong = new Dump(new URL("http://www.dfki.uni-kl.de/~franke/hiwi_outline.json"),"geozone","latitude","longitude");
+        RetrieveLatLong retrieveLatLong = new Dump(new URL("url"),"geozone","latitude","longitude");
         retrieveLatLong.fetchJson();
         System.out.println(retrieveLatLong.getLatitude());
         System.out.println(retrieveLatLong.getLongitude());
